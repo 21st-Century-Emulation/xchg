@@ -1,0 +1,12 @@
+{
+  "name": "DevContainer for Drogon",
+  "dockerFile": "Dockerfile",
+  "context":"..",
+  "runArgs": [],
+  "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash",
+  },
+  "extensions": [
+      "ms-vscode.cpptools-extension-pack",
+  ]
+}
