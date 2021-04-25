@@ -1,6 +1,8 @@
 docker build -q -t xchg .
 docker run --rm --name xchg -d -p 8080:8080 xchg
 
+sleep 5
+
 RESULT=`curl -s --header "Content-Type: application/json" \
   --request POST \
   --data '{"id":"abcd", "opcode":0,"state":{"a":242,"b":0,"c":0,"d":5,"e":15,"h":10,"l":20,"flags":{"sign":true,"zero":false,"auxCarry":false,"parity":false,"carry":false},"programCounter":1,"stackPointer":2,"cycles":0}}' \
